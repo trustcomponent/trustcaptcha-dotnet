@@ -1,4 +1,4 @@
-![NuGet](https://img.shields.io/nuget/v/TrustComponent.TrustCaptcha)
+![NuGet](https://img.shields.io/nuget/v/trustcaptcha)
 
 # TrustCaptcha for DotNet — GDPR-compliant, privacy-first CAPTCHA
 
