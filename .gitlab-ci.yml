@@ -1,0 +1,49 @@
+stages:
+  - build
+  - publish
+  - publish-public
+
+variables:
+  DOTNET_IMAGE: "mcr.microsoft.com/dotnet/sdk:6.0"
+
+cache:
+  paths:
+    - .nuget/packages
+
+build:
+  image: $DOTNET_IMAGE
+  stage: build
+  script:
+    - dotnet build --configuration Release
+    - dotnet test --configuration Release
+  tags:
+    - build
+  only:
+    - branches
+    - tags
+
+publish:
+  image: $DOTNET_IMAGE
+  stage: publish
+  script:
+    - dotnet restore
+    - dotnet build --configuration Release
+    - dotnet pack --configuration Release /p:PackageVersion=0.0.0-${CI_COMMIT_REF_NAME}-${CI_COMMIT_SHORT_SHA}
+    - dotnet nuget push bin/Release/*.nupkg -k $CI_JOB_TOKEN -s https://git.trustcaptcha.company/api/v4/projects/$CI_PROJECT_ID/packages/nuget/index.json
+  tags:
+    - build
+  only:
+    - branches
+
+publish-public:
+  image: $DOTNET_IMAGE
+  stage: publish-public
+  script:
+    - dotnet restore
+    - dotnet build --configuration Release
+    - dotnet pack --configuration Release /p:PackageVersion=$CI_COMMIT_TAG
+    - dotnet nuget push bin/Release/*.nupkg -k $NUGET_API_KEY -s https://api.nuget.org/v3/index.json
+  tags:
+    - build
+  only:
+    - tags

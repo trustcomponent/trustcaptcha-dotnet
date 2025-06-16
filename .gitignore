@@ -1,0 +1,74 @@
+# Ignore Visual Studio temporary files, build results, and
+# include .NET Core directories and files
+
+## Ignore Visual Studio temporary files, build results, and
+## include .NET Core directories and files
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# User-specific files (Mono Auto Generated)
+mono_crash.*
+
+# Mono auto generated files
+*.pidb
+*.booproj
+*.unityproj
+*.sln.*
+*.userprefs
+
+# User-specific files (VS Code)
+.vscode
+*.code-workspace
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+build/
+[Bb]uild/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+[Tt]est[Rr]esults/
+[Tt]emp/
+[Aa]pp[Pp]ackages/
+
+# .NET Core directories
+project.lock.json
+project.fragment.lock.json
+artifacts/
+generated/
+.paket/
+.nuget/
+
+# Roslyn auto generated files
+*.Designer.cs
+*.Generated.cs
+*.generated.cs
+*.AssemblyAttributes.cs
+*.g.cs
+*.g.i.cs
+
+# Others
+.vscode/
+.history/
+node_modules/
+npm-debug.log
+yarn-error.log
+yarn-debug.log
+node_modules/
+dist/
+out/
+.idea/
+*.log
+*.pdb
+*.pyc
+*.pyo
+venv/
