@@ -1,7 +1,7 @@
 using System;
 using System.Text.Json.Serialization;
 
-namespace TrustcaptchaCSharp.Lib.Model;
+namespace TrustComponent.TrustCaptcha.Model;
 
 public class VerificationResult
 {

@@ -3,7 +3,7 @@
     <PropertyGroup>
         <TargetFramework>net6.0</TargetFramework>
         <LangVersion>10</LangVersion>
-        <PackageId>trustcaptcha</PackageId>
+        <PackageId>TrustComponent.TrustCaptcha</PackageId>
         <AssemblyName>TrustCaptcha</AssemblyName>
         <Authors>TrustComponent</Authors>
         <Company>Trustcaptcha GmbH</Company>

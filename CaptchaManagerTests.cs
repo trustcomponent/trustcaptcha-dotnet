@@ -1,10 +1,10 @@
 using System;
 using System.Threading.Tasks;
 using Xunit;
-using TrustcaptchaCSharp.Lib;
-using TrustcaptchaCSharp.Lib.Model;
+using TrustComponent.TrustCaptcha;
+using TrustComponent.TrustCaptcha.Model;
 
-namespace TrustcaptchaCSharp.Tests
+namespace TrustComponent.TrustCaptcha.Tests
 {
     public class CaptchaManagerTests
     {

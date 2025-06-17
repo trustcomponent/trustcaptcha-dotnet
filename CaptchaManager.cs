@@ -3,9 +3,9 @@ using System.Net.Http;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
-using TrustcaptchaCSharp.Lib.Model;
+using TrustComponent.TrustCaptcha.Model;
 
-namespace TrustcaptchaCSharp.Lib
+namespace TrustComponent.TrustCaptcha
 {
     public static class CaptchaManager
     {
