@@ -51,7 +51,7 @@ catch (Exception ex)
 
 3. Act on the result
 ```c#
-// Do something with the verification result
+// Act on the verification result
 if (!verificationResult.VerificationPassed || verificationResult.Score > 0.5)
 {
   Console.WriteLine("Verification failed or bot score > 0.5 – possible automated request.");
