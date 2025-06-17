@@ -19,7 +19,7 @@ namespace TrustComponent.TrustCaptcha
             var request = new HttpRequestMessage(HttpMethod.Get, url);
             request.Headers.Add("tc-authorization", secretKey);
             request.Headers.Add("tc-library-language", "dotnet");
-            request.Headers.Add("tc-library-version", "1.2");
+            request.Headers.Add("tc-library-version", "2.0");
 
             try
             {
